@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const signupBtn = document.getElementById('signupBtn');
     const loginForm = document.getElementById('loginForm');
     const signupForm = document.getElementById('signupForm');
+    const olhoBtn = document.getElementById('olho');
 
     loginBtn.addEventListener('click', () => {
         loginForm.style.transform = 'translateX(0)';
@@ -23,4 +24,20 @@ document.addEventListener('DOMContentLoaded', () => {
         loginBtn.classList.remove('ativoBtn');
         loginBtn.classList.add('inativoBtn');
     });
+
+    olhoBtn.addEventListener('click', ()=>{
+        alteraOlho(olhoBtn);
+    })
 });
+
+function alteraOlho (olhoBtn){
+    const campoSenha = document.getElementById('senha');
+
+    if (campoSenha.type==="password"){
+        campoSenha.type = "text";
+        olhoBtn.classList.remove("fechado");
+    } else{
+        campoSenha.type = "password";
+        olhoBtn.classList.add("fechado");
+    }
+}
