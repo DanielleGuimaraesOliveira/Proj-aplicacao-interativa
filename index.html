@@ -6,26 +6,32 @@
         <title>Login e Cadastro</title>
         <link rel="stylesheet" href="base.css">
         <link rel="stylesheet" href="styles.css">
-        <script src="script.js"></script>
+        <script src="script.js" defer></script>
+        <script type="module" src="firebase.js"></script>
 
 </head>
 <body>
     <div class="container">
-        <img id="logo" src="" alt="">
-        <div id="socialMedia">
-            <button id="socialMedia-btn">
+        <img id="logo" src="img/logo.png" alt="">
+        <div id="redeSocial">
+            <button id="redeSocial-btn">
                 <img src="img/gmail_logo.png" alt="" id="gmail">
             </button>
-            <button id="socialMedia-btn">
+            <button id="redeSocial-btn">
                 <img src="img/facebook-logo.png" alt="" id="facebook">
             </button>
-            <button id="socialMedia-btn">
+            <button id="redeSocial-btn">
                 <img src="img/insta-logo.png" alt="" id="instagram">
             </button>
         </div>
+        <div id="opcao">
+            <img class="linha-img" src="img/linha-imagem.png" alt="">
+            <p id="ouConecte">ou conecte-se com...</p>
+            <img class="linha-img" src="img/linha-imagem.png" alt="">
+        </div>
         <div class="loginSignup">
-            <button id="loginBtn">Login</button>
-            <button id="signupBtn">Sign Up</button>
+            <button id="loginBtn" class="linha">Entrar</button>
+            <button id="signupBtn" class="linha">Cadastrar</button>
         </div>
         <div class="form-container" id="formContainer">
             <div class="form" id="loginForm">
@@ -33,16 +39,15 @@
                 <div class="senha-container">
                     <input id="senha" type="text" placeholder="Senha" required>
                     <span class="olho-icon" id="olho"> </span>
-
                 </div>
-                <button class="enviarBtn" type="submit">Login</button>
-                <a id="senha-esquecida" href="">forgot your password</a>
+                <button class="enviar-btn" type="submit">Entrar</button>
+                <a id="senha-esquecida" class="linha" href="">Esqueceu sua senha?</a>
             </div>
             <div class="form" id="signupForm">
-                <input class="inpt" type="text" placeholder="Username" required>
-                <input class="inpt" type="email" placeholder="Email" required>
-                <input class="inpt" type="password" placeholder="Senha" required>
-                <button  class="enviarBtn" type="submit">Sign up</button>
+                <input class="inpt" type="text" placeholder="Email" required>
+                <input class="inpt" type="email" placeholder="Senha" required>
+                <input class="inpt" type="password" placeholder="Repita sua senha" required>
+                <button  class="enviar-btn" type="submit">Cadastrar</button>
             </div>
         </div>
     </div>
