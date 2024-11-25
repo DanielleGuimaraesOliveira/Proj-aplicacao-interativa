@@ -7,8 +7,10 @@
         <link rel="stylesheet" href="base.css">
         <link rel="stylesheet" href="styles.css">
         <script src="script.js" defer></script>
-        <script type="module" src="firebase.js"></script>
-
+        <script src="https://www.gstatic.com/firebasejs/11.0.2/firebase-app-compat.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/11.0.2/firebase-auth-compat.js"></script>
+        <script src="firebase.js"></script>
+        <script src="verificacaologinSignin.js"></script>
 </head>
 <body>
     <div class="container">
@@ -35,18 +37,18 @@
         </div>
         <div class="form-container" id="formContainer">
             <div class="form" id="loginForm">
-                <input class="inpt" type="email" placeholder="Email" required>
+                <input class="inpt" id="email-login" type="email" placeholder="Email" required>
                 <div class="senha-container">
-                    <input id="senha" type="text" placeholder="Senha" required>
+                    <input id="senha" class="senha-login" type="text" placeholder="Senha" required>
                     <span class="olho-icon" id="olho"> </span>
                 </div>
-                <button class="enviar-btn" type="submit">Entrar</button>
+                <button class="enviar-btn" id="enviar-btn-login" type="submit">Entrar</button>
                 <a id="senha-esquecida" class="linha" href="">Esqueceu sua senha?</a>
             </div>
             <div class="form" id="signupForm">
-                <input class="inpt" type="text" placeholder="Email" required>
-                <input class="inpt" type="email" placeholder="Senha" required>
-                <input class="inpt" type="password" placeholder="Repita sua senha" required>
+                <input class="inpt" id="email-signup" type="text" placeholder="Email" required>
+                <input class="inpt" id="senha-signup" type="email" placeholder="Senha" required>
+                <input class="inpt" id="repete-senha-signup" type="password" placeholder="Repita sua senha" required>
                 <button  class="enviar-btn" type="submit">Cadastrar</button>
             </div>
         </div>

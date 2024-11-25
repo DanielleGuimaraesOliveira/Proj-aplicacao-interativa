@@ -306,3 +306,8 @@ button {
     margin-bottom: 50px;
     }
 }
+
+#email-signup.error, #email-login.error, #senha-signup.error, #repete-senha-signup.error{
+    border-color: red;
+}
+
