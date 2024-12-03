@@ -42,14 +42,18 @@
                     <input id="senha" class="senha-login" type="text" placeholder="Senha" required>
                     <span class="olho-icon" id="olho"> </span>
                 </div>
+                <p class="error-message" id="senha-login-error"></p>
                 <button class="enviar-btn" id="enviar-btn-login" type="submit">Entrar</button>
-                <a id="senha-esquecida" class="linha" href="">Esqueceu sua senha?</a>
+                <a id="senha-esquecida" class="linha" >Esqueceu sua senha?</a>
             </div>
             <div class="form" id="signupForm">
                 <input class="inpt" id="email-signup" type="text" placeholder="Email" required>
                 <input class="inpt" id="senha-signup" type="email" placeholder="Senha" required>
+                <p class="error-message" id="senha-signup-error"></p>
                 <input class="inpt" id="repete-senha-signup" type="password" placeholder="Repita sua senha" required>
-                <button  class="enviar-btn" type="submit">Cadastrar</button>
+                <p class="error-message" id="senha-repetida-error"></p>
+
+                <button id="enviar-btn-signup"  class="enviar-btn" type="submit">Cadastrar</button>
             </div>
         </div>
     </div>
